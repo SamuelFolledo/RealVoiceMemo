@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3361186C231B6AEF00A812D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361186B231B6AEF00A812D7 /* AppDelegate.swift */; };
+		3361186E231B6AEF00A812D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361186D231B6AEF00A812D7 /* ViewController.swift */; };
+		33611871231B6AEF00A812D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3361186F231B6AEF00A812D7 /* Main.storyboard */; };
+		33611873231B6AEF00A812D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33611872231B6AEF00A812D7 /* Assets.xcassets */; };
+		33611876231B6AEF00A812D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33611874231B6AEF00A812D7 /* LaunchScreen.storyboard */; };
+		33611881231B6AEF00A812D7 /* FolledoRealVoiceMemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33611880231B6AEF00A812D7 /* FolledoRealVoiceMemoTests.swift */; };
+		3361188C231B6AEF00A812D7 /* FolledoRealVoiceMemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3361188B231B6AEF00A812D7 /* FolledoRealVoiceMemoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3361187D231B6AEF00A812D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33611860231B6AEE00A812D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33611867231B6AEE00A812D7;
+			remoteInfo = FolledoRealVoiceMemo;
+		};
+		33611888231B6AEF00A812D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 33611860231B6AEE00A812D7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 33611867231B6AEE00A812D7;
+			remoteInfo = FolledoRealVoiceMemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		33611868231B6AEF00A812D7 /* FolledoRealVoiceMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FolledoRealVoiceMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3361186B231B6AEF00A812D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3361186D231B6AEF00A812D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		33611870231B6AEF00A812D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		33611872231B6AEF00A812D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		33611875231B6AEF00A812D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		33611877231B6AEF00A812D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3361187C231B6AEF00A812D7 /* FolledoRealVoiceMemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FolledoRealVoiceMemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		33611880231B6AEF00A812D7 /* FolledoRealVoiceMemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolledoRealVoiceMemoTests.swift; sourceTree = "<group>"; };
+		33611882231B6AEF00A812D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33611887231B6AEF00A812D7 /* FolledoRealVoiceMemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FolledoRealVoiceMemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3361188B231B6AEF00A812D7 /* FolledoRealVoiceMemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolledoRealVoiceMemoUITests.swift; sourceTree = "<group>"; };
+		3361188D231B6AEF00A812D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		33611865231B6AEE00A812D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33611879231B6AEF00A812D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33611884231B6AEF00A812D7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3361185F231B6AEE00A812D7 = {
+			isa = PBXGroup;
+			children = (
+				3361186A231B6AEF00A812D7 /* FolledoRealVoiceMemo */,
+				3361187F231B6AEF00A812D7 /* FolledoRealVoiceMemoTests */,
+				3361188A231B6AEF00A812D7 /* FolledoRealVoiceMemoUITests */,
+				33611869231B6AEF00A812D7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		33611869231B6AEF00A812D7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33611868231B6AEF00A812D7 /* FolledoRealVoiceMemo.app */,
+				3361187C231B6AEF00A812D7 /* FolledoRealVoiceMemoTests.xctest */,
+				33611887231B6AEF00A812D7 /* FolledoRealVoiceMemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3361186A231B6AEF00A812D7 /* FolledoRealVoiceMemo */ = {
+			isa = PBXGroup;
+			children = (
+				3361186B231B6AEF00A812D7 /* AppDelegate.swift */,
+				3361186D231B6AEF00A812D7 /* ViewController.swift */,
+				3361186F231B6AEF00A812D7 /* Main.storyboard */,
+				33611872231B6AEF00A812D7 /* Assets.xcassets */,
+				33611874231B6AEF00A812D7 /* LaunchScreen.storyboard */,
+				33611877231B6AEF00A812D7 /* Info.plist */,
+			);
+			path = FolledoRealVoiceMemo;
+			sourceTree = "<group>";
+		};
+		3361187F231B6AEF00A812D7 /* FolledoRealVoiceMemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				33611880231B6AEF00A812D7 /* FolledoRealVoiceMemoTests.swift */,
+				33611882231B6AEF00A812D7 /* Info.plist */,
+			);
+			path = FolledoRealVoiceMemoTests;
+			sourceTree = "<group>";
+		};
+		3361188A231B6AEF00A812D7 /* FolledoRealVoiceMemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3361188B231B6AEF00A812D7 /* FolledoRealVoiceMemoUITests.swift */,
+				3361188D231B6AEF00A812D7 /* Info.plist */,
+			);
+			path = FolledoRealVoiceMemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		33611867231B6AEE00A812D7 /* FolledoRealVoiceMemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33611890231B6AEF00A812D7 /* Build configuration list for PBXNativeTarget "FolledoRealVoiceMemo" */;
+			buildPhases = (
+				33611864231B6AEE00A812D7 /* Sources */,
+				33611865231B6AEE00A812D7 /* Frameworks */,
+				33611866231B6AEE00A812D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FolledoRealVoiceMemo;
+			productName = FolledoRealVoiceMemo;
+			productReference = 33611868231B6AEF00A812D7 /* FolledoRealVoiceMemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3361187B231B6AEF00A812D7 /* FolledoRealVoiceMemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33611893231B6AEF00A812D7 /* Build configuration list for PBXNativeTarget "FolledoRealVoiceMemoTests" */;
+			buildPhases = (
+				33611878231B6AEF00A812D7 /* Sources */,
+				33611879231B6AEF00A812D7 /* Frameworks */,
+				3361187A231B6AEF00A812D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3361187E231B6AEF00A812D7 /* PBXTargetDependency */,
+			);
+			name = FolledoRealVoiceMemoTests;
+			productName = FolledoRealVoiceMemoTests;
+			productReference = 3361187C231B6AEF00A812D7 /* FolledoRealVoiceMemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		33611886231B6AEF00A812D7 /* FolledoRealVoiceMemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33611896231B6AEF00A812D7 /* Build configuration list for PBXNativeTarget "FolledoRealVoiceMemoUITests" */;
+			buildPhases = (
+				33611883231B6AEF00A812D7 /* Sources */,
+				33611884231B6AEF00A812D7 /* Frameworks */,
+				33611885231B6AEF00A812D7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33611889231B6AEF00A812D7 /* PBXTargetDependency */,
+			);
+			name = FolledoRealVoiceMemoUITests;
+			productName = FolledoRealVoiceMemoUITests;
+			productReference = 33611887231B6AEF00A812D7 /* FolledoRealVoiceMemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		33611860231B6AEE00A812D7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = SamuelFolledo;
+				TargetAttributes = {
+					33611867231B6AEE00A812D7 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					3361187B231B6AEF00A812D7 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 33611867231B6AEE00A812D7;
+					};
+					33611886231B6AEF00A812D7 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 33611867231B6AEE00A812D7;
+					};
+				};
+			};
+			buildConfigurationList = 33611863231B6AEE00A812D7 /* Build configuration list for PBXProject "FolledoRealVoiceMemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3361185F231B6AEE00A812D7;
+			productRefGroup = 33611869231B6AEF00A812D7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				33611867231B6AEE00A812D7 /* FolledoRealVoiceMemo */,
+				3361187B231B6AEF00A812D7 /* FolledoRealVoiceMemoTests */,
+				33611886231B6AEF00A812D7 /* FolledoRealVoiceMemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		33611866231B6AEE00A812D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33611876231B6AEF00A812D7 /* LaunchScreen.storyboard in Resources */,
+				33611873231B6AEF00A812D7 /* Assets.xcassets in Resources */,
+				33611871231B6AEF00A812D7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3361187A231B6AEF00A812D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33611885231B6AEF00A812D7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		33611864231B6AEE00A812D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3361186E231B6AEF00A812D7 /* ViewController.swift in Sources */,
+				3361186C231B6AEF00A812D7 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33611878231B6AEF00A812D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33611881231B6AEF00A812D7 /* FolledoRealVoiceMemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33611883231B6AEF00A812D7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3361188C231B6AEF00A812D7 /* FolledoRealVoiceMemoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3361187E231B6AEF00A812D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33611867231B6AEE00A812D7 /* FolledoRealVoiceMemo */;
+			targetProxy = 3361187D231B6AEF00A812D7 /* PBXContainerItemProxy */;
+		};
+		33611889231B6AEF00A812D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 33611867231B6AEE00A812D7 /* FolledoRealVoiceMemo */;
+			targetProxy = 33611888231B6AEF00A812D7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3361186F231B6AEF00A812D7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33611870231B6AEF00A812D7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		33611874231B6AEF00A812D7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				33611875231B6AEF00A812D7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3361188E231B6AEF00A812D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3361188F231B6AEF00A812D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		33611891231B6AEF00A812D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NY68F4K3P;
+				INFOPLIST_FILE = FolledoRealVoiceMemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SamuelFolledo.FolledoRealVoiceMemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		33611892231B6AEF00A812D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NY68F4K3P;
+				INFOPLIST_FILE = FolledoRealVoiceMemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SamuelFolledo.FolledoRealVoiceMemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		33611894231B6AEF00A812D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NY68F4K3P;
+				INFOPLIST_FILE = FolledoRealVoiceMemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SamuelFolledo.FolledoRealVoiceMemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FolledoRealVoiceMemo.app/FolledoRealVoiceMemo";
+			};
+			name = Debug;
+		};
+		33611895231B6AEF00A812D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NY68F4K3P;
+				INFOPLIST_FILE = FolledoRealVoiceMemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SamuelFolledo.FolledoRealVoiceMemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FolledoRealVoiceMemo.app/FolledoRealVoiceMemo";
+			};
+			name = Release;
+		};
+		33611897231B6AEF00A812D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NY68F4K3P;
+				INFOPLIST_FILE = FolledoRealVoiceMemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SamuelFolledo.FolledoRealVoiceMemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FolledoRealVoiceMemo;
+			};
+			name = Debug;
+		};
+		33611898231B6AEF00A812D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9NY68F4K3P;
+				INFOPLIST_FILE = FolledoRealVoiceMemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SamuelFolledo.FolledoRealVoiceMemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FolledoRealVoiceMemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		33611863231B6AEE00A812D7 /* Build configuration list for PBXProject "FolledoRealVoiceMemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3361188E231B6AEF00A812D7 /* Debug */,
+				3361188F231B6AEF00A812D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33611890231B6AEF00A812D7 /* Build configuration list for PBXNativeTarget "FolledoRealVoiceMemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33611891231B6AEF00A812D7 /* Debug */,
+				33611892231B6AEF00A812D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33611893231B6AEF00A812D7 /* Build configuration list for PBXNativeTarget "FolledoRealVoiceMemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33611894231B6AEF00A812D7 /* Debug */,
+				33611895231B6AEF00A812D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33611896231B6AEF00A812D7 /* Build configuration list for PBXNativeTarget "FolledoRealVoiceMemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33611897231B6AEF00A812D7 /* Debug */,
+				33611898231B6AEF00A812D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 33611860231B6AEE00A812D7 /* Project object */;
+}
