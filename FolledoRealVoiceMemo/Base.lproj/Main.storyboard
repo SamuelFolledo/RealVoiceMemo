@@ -1,21 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--HomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeVC" customModule="FolledoRealVoiceMemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJJ-DM-dab">
+                                <rect key="frame" x="103.5" y="428" width="207" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="PM0-P0-7hb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="Record">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="recordButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fyk-Do-7q4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkT-dL-NIH">
+                                <rect key="frame" x="103.5" y="515" width="207" height="50"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iP7-rc-UEb">
+                                <rect key="frame" x="103.5" y="610" width="207" height="50"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="RwN-l3-YwF">
+                                <rect key="frame" x="20" y="380" width="374" height="29"/>
+                                <segments>
+                                    <segment title="English"/>
+                                    <segment title="French"/>
+                                    <segment title="German"/>
+                                    <segment title="Spanish"/>
+                                    <segment title="Italian"/>
+                                </segments>
+                                <connections>
+                                    <action selector="languageControlTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="CaS-ds-Frw"/>
+                                </connections>
+                            </segmentedControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ngV-5g-cgD">
+                                <rect key="frame" x="20" y="44" width="374" height="336"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="RwN-l3-YwF" secondAttribute="trailing" constant="20" id="AcO-NU-fAT"/>
+                            <constraint firstItem="iP7-rc-UEb" firstAttribute="top" secondItem="HkT-dL-NIH" secondAttribute="bottom" constant="45" id="Dyb-p2-cqk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ngV-5g-cgD" secondAttribute="trailing" constant="20" id="Fen-y6-0NP"/>
+                            <constraint firstItem="QJJ-DM-dab" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="1:2" id="Gcf-xh-Dir"/>
+                            <constraint firstItem="QJJ-DM-dab" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="IXf-u5-Hgk"/>
+                            <constraint firstItem="QJJ-DM-dab" firstAttribute="top" secondItem="RwN-l3-YwF" secondAttribute="bottom" constant="20" id="LX4-7L-UcZ"/>
+                            <constraint firstItem="HkT-dL-NIH" firstAttribute="top" secondItem="QJJ-DM-dab" secondAttribute="bottom" constant="37" id="MN4-ji-fet"/>
+                            <constraint firstItem="ngV-5g-cgD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Pfa-JF-Fog"/>
+                            <constraint firstItem="ngV-5g-cgD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Srg-ge-rVo"/>
+                            <constraint firstItem="iP7-rc-UEb" firstAttribute="centerX" secondItem="QJJ-DM-dab" secondAttribute="centerX" id="Zln-yZ-HeV"/>
+                            <constraint firstItem="iP7-rc-UEb" firstAttribute="width" secondItem="QJJ-DM-dab" secondAttribute="width" id="a2S-Tb-Ppl"/>
+                            <constraint firstItem="HkT-dL-NIH" firstAttribute="centerX" secondItem="QJJ-DM-dab" secondAttribute="centerX" id="crX-uF-QTx"/>
+                            <constraint firstItem="HkT-dL-NIH" firstAttribute="width" secondItem="QJJ-DM-dab" secondAttribute="width" id="dRk-vj-WYb"/>
+                            <constraint firstItem="RwN-l3-YwF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="djT-94-tUD"/>
+                            <constraint firstItem="QJJ-DM-dab" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="e5U-RK-kzD"/>
+                            <constraint firstItem="iP7-rc-UEb" firstAttribute="height" secondItem="QJJ-DM-dab" secondAttribute="height" id="fDZ-23-b5s"/>
+                            <constraint firstItem="RwN-l3-YwF" firstAttribute="top" secondItem="ngV-5g-cgD" secondAttribute="bottom" id="fdS-3N-z6k"/>
+                            <constraint firstItem="HkT-dL-NIH" firstAttribute="height" secondItem="QJJ-DM-dab" secondAttribute="height" id="pWe-2N-ldP"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="button1" destination="HkT-dL-NIH" id="0V4-gi-qak"/>
+                        <outlet property="button2" destination="iP7-rc-UEb" id="0J6-Fs-6OE"/>
+                        <outlet property="languageControl" destination="RwN-l3-YwF" id="HBd-Ob-Hev"/>
+                        <outlet property="recordButton" destination="QJJ-DM-dab" id="4dY-Vg-HWY"/>
+                        <outlet property="speechTextView" destination="ngV-5g-cgD" id="00r-5m-nXz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
