@@ -11,6 +11,6 @@ Important things to know to program this:
     - base raised to what power equals the number
     
 - tf-idf score of a word, w is:
-    - tf(w) * idf(w)
+    - tf(w) * idf(w) = points of how complicated a word is
         - tf(w) = (number of times the word appears in a document) / (total number of words in a document)
         - idf(w) = log(number of documents / number of documents that contain the word w)
