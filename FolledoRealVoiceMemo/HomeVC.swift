@@ -8,6 +8,7 @@
 
 import UIKit
 import Speech
+import NaturalLanguage //Added for tokenizing our transcribed words
 
 class HomeVC: UIViewController {
     
@@ -27,6 +28,7 @@ class HomeVC: UIViewController {
     private var audioEngine = AVAudioEngine()
     var lang: String = "en-US"
     
+    var speechToText: String = ""
     
 //MARK: LifeCycle
     override func viewDidLoad() {
@@ -120,21 +122,53 @@ class HomeVC: UIViewController {
             fatalError("Unable to create an SFSpeechAudioBufferRecognitionRequest object")
         }
         
-        recognitionRequest.shouldReportPartialResults = true
+        recognitionRequest.shouldReportPartialResults = true // shouldReportPartialResults = a Boolean value that indicates whether you want intermediate results returned for each utterance.
         
-        recognitionTask = speechRecognizer?.recognitionTask(with: recognitionRequest, resultHandler: { (result, error) in
+        recognitionTask = speechRecognizer?.recognitionTask(with: recognitionRequest, resultHandler: { (result, error) in //recognitionTask = Executes the speech recognition request and delivers the results to the specified handler block.
             
             var isFinal = false
             
-            if result != nil {
-                self.speechTextView.text = result?.bestTranscription.formattedString
-                isFinal = result!.isFinal
-            
+            if result != nil { //if we have results
+                let transcription = result!.bestTranscription.formattedString //The transcription with the highest confidence level.
+//                self.speechTextView.text = transcription
+                isFinal = result!.isFinal //isFinal = a Boolean value that indicates whether speech recognition is complete and whether the transcriptions are final.
+//                print("\(isFinal) = \(transcription)") //turns true when we click stop recording.
+                self.speechToText = transcription //assign transcribed words to speechToText
+                
+//NATURAL LANGUAGE PROCESSING beginning
+                let tagger = NLTagger(tagSchemes: [.lexicalClass])
+                tagger.string = transcription
+                var result = ""
+                
+                tagger.enumerateTags(in: transcription.startIndex ..< transcription.endIndex, unit: .word, scheme: .lexicalClass, options: [.omitPunctuation, .omitWhitespace], using: { (tag, range) -> Bool in //omit means to exclude //enumerateTags = Enumerates over a given range of the string for a particular unit and calls the specified block for each tag.
+                    /* Parameters
+                    
+                    range
+                    The range to analyze.
+                    unit
+                    The linguistic unit. .word tokenize every word
+                    The tag scheme. For possible values, see NLTagScheme.
+                    options
+                    The linguistic tagger options to use. For possible values, see NLTagger.Options.
+                    block
+                    The block to apply to ranges of the string.
+                    The block takes the following arguments:
+                    tag
+                    The located linguistic tag.
+                    tokenRange
+                    The range of the linguistic tag.
+                    stop
+                    A reference to a Boolean value. The block can set the value to true to stop further processing of the set. The stop argument is an out-only argument. You should only ever set this Boolean to true within the block. */
+                    if let lexicalTag = tag {
+                        result += transcription[range] + " = [\(lexicalTag.rawValue)]\n"
+                    }
+                    self.speechTextView.text = result
+                    return true
+                })
+                print(result)
             }
             
             if error != nil || isFinal {
-//                self.audioEngine.stop()
-//                inputNode.removeTap(onBus: 0) //??????
                 self.audioEngine.inputNode.removeTap(onBus: 0)
                 
                 self.recognitionRequest = nil
@@ -146,7 +180,7 @@ class HomeVC: UIViewController {
         
         let recordingFormat = inputNode.outputFormat(forBus: 0)
         inputNode.installTap(onBus: 0, bufferSize: 1024, format: recordingFormat) { (buffer, when) in
-//            print("Buffer is \(buffer)")
+
             self.recognitionRequest?.append(buffer)
         }
         
